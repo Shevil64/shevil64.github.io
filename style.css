@@ -1,0 +1,658 @@
+
+/* Smartphones (portrait and landscape) 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+     }
+  */
+  /* Smartphones (landscape) 
+  @media only screen and (min-width : 321px) {
+  
+  }
+  */
+  /* Smartphones (portrait)  
+  @media only screen and (max-width : 320px) {
+   
+  }
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    overflow-x:hidden; /*per impedire di lo scrolling orizzontale*/
+}
+
+/* stile del div che contiene l'header e l'immagine principale*/
+.hero {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+}
+
+/*NAV*/
+
+/* specifica lo stile di ogni elemento di tipo nav */
+nav {
+    display: flex;
+    align-items: center;
+    padding:  60px 0 60px 150px;
+}
+
+nav .logo {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    left: -100px;
+    margin-right: auto;
+}
+
+/*applica lo stile alla lista non ordinata figlia dell'elemento nav*/
+nav ul {
+    text-align: end;
+    position: absolute;
+    right: 0.78125vw;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*applica lo stile ai singoli elementi della lista non ordinata\ box diverso*/
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0vw calc(120px - 2vw);
+    
+    /* il margine sopra e sotto \ destra e sinistra */
+
+}
+
+/*cambia lo stile dei link eredi di etc etc */
+nav ul li a {
+    text-decoration: none; /*per evitare che compaia la sottolineatura tipica del collegamento*/
+    color: #929292;
+    font-size: calc(9px + 0.390625vw);
+}
+
+/*cambia colore ai link quando ci passi sopra*/
+a:hover{
+    color: #000000b7;
+ 
+ }
+
+.sfondo{
+    position: relative;
+    width: 100%;
+    padding-bottom: 40px;
+} 
+
+.chisiamo{
+    padding-left: 7.604vw; /*146*/
+    padding-right: 7.604vw;
+    padding-top: 4.167vw; 
+    padding-bottom: 120px;
+}
+
+h2 { 
+    font-weight: 700;
+    font-size: 41px;
+    
+}
+h2 b { 
+    font-weight: 300;
+}
+
+.testochisiamo{
+    padding: 0 calc(55px + 4.739583333333333vw); /*146px*/
+    padding-bottom: 3.646vw; /*70px*/
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: calc(16px + 0.833vw); /*32px*/
+    line-height: calc(20px + 2.6041666666666665vw); /*71px*/
+}
+
+
+
+                    /*PROPIC*/
+
+
+.fondatori
+{
+   
+   margin-left: calc(50vw - 480px);
+   margin-right: calc(50vw - 480px);
+   width: auto;
+
+}
+
+
+/*Titolo*/
+.fondatori-child3{
+    text-align: center;
+    font-size: 31px;
+    padding-bottom: 2%;
+    padding-top: 5%;
+    width: 100%;
+    display: inline-block;
+}
+
+/*Propic sinistra*/
+.fondatori-child1{
+    width: 50%;
+    float: left; 
+
+  
+}
+
+/*Propic destra*/
+.fondatori-child2{
+    width: 50%;
+    float: right;
+    padding-left: 80px;
+}
+
+.fondatori-img
+{
+    height: auto ; 
+    max-width: 100% ;
+}
+
+.fondatori-endl{
+    padding-bottom: 174px;
+    width: 100%;
+    display: inline-block;
+}
+
+.pictesto{
+    font-size: 31px;
+    padding-top: 45px;
+    overflow: hidden;
+    
+}
+
+.fondatori a{
+    text-decoration: none;
+    color: #232323;
+    
+}
+
+.fondatori a:hover{
+    color: #747474;
+ 
+ }
+
+
+                    /*SERVIZI*/
+
+.servizi{
+    background-color:#004225;
+    color: #ffffff;
+    height: fit-content;
+    width: 100%;
+
+    
+}
+
+.testoservizi{
+    padding-top: 70px;
+    padding-right: calc(10px + 7.083333333333333vw);
+    padding-bottom: 3.6458333333333335vw;
+    text-align: justify;
+    font-size: calc(16px + 0.8333333333333334vw);
+    line-height: calc(20px + 2.6041666666666665vw);
+    color: #ffffff;
+
+    
+}
+
+.float-container {
+    display: table;
+    width: 100%;
+    /*table layout per risolvere la tabella che esce fuori dal div*/
+    table-layout: fixed;
+    padding-bottom: 8vw;
+    margin: 0;
+
+}
+
+.float-child1 {
+    width: 50vw;
+    float: none;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: #232323;
+    display: table-cell;
+    margin: 0;
+
+
+}  
+
+.float-child2 {
+    width: 50vw;
+    float: none;
+    text-align: center;
+    background-color: #232323;
+    color: white;
+    display: table-cell;
+    padding: 0 0 60px 0;
+    margin: 0;
+
+}  
+
+.strutture{
+    font-size: calc(12px + 1.5625vw);
+    color: #232323;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 7.447916666666667vw;
+    padding-bottom: 9.895833333333334vw;
+}
+
+.contenimento{
+    font-size: calc(12px + 1.5625vw);
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 7.447916666666667vw;
+    padding-bottom: 8.59375vw;
+}
+
+.strutturetesto{
+    font-size: calc(12px + 1.25vw);
+    color: #232323;
+    line-height: calc(20px + 1.6145833333333333vw);
+    margin: 0 20px;
+
+}
+
+.contenimentotesto{
+    font-size: calc(12px + 1.25vw);
+    color: white;
+    line-height: calc(20px + 1.6145833333333333vw);
+    margin: 0 20px;
+    padding-right: 10px ;
+}
+
+.strutturelinea{
+    padding: 25px 0;
+}
+
+.contenimentolinea{
+    padding: 42px 0;
+}
+
+
+                    /*GALLERIA*/
+
+.progetti{
+    padding-left: 7.447916666666667vw;
+}
+
+.titoloprogetti{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 56px;
+    padding-top: 155px;
+}
+
+
+#galleria{
+	text-align: center;
+	width: 100%;
+}
+
+
+.immagine{
+	display: inline-block;
+	width: 17%;
+	margin: 20px 0.78125vw;
+    padding: 1.5625vw 5px;
+    vertical-align: top; /*per allineare verticalmente i blocchi nella parte superiore*/
+}
+
+.immagine p{
+    font-size: 20px;
+}
+
+.galleria-endl{
+    padding-bottom: calc(50px + 13.5vw)
+}
+
+.preview{
+	width: 100%;
+}
+
+@media (max-width: 480px) {
+	.immagine{
+		width: 98%;
+		margin: 1%;
+        padding: 20px;
+        
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px){
+	.immagine{
+		width: 47%;
+	}
+}
+
+@media (max-width: 1280px) and (min-width: 720px){
+	.immagine{
+		width: 30%;
+        padding: 10px;
+	}
+}
+
+
+/*LAVORA CON NOI*/
+
+.flex-container {
+    display: flex;
+    height: auto;
+}
+
+
+.lavoraconnoi{
+    background-image: url("images/Foto primo piano/Foto n2.jpg");
+    background-position: top;
+    background-repeat: no-repeat; 
+    background-size: contain; 
+    height: inherit;
+    width: 100%;
+    padding-bottom: 10vw;
+}
+
+
+
+/*VW (Viewport Width) e VH (Viewport Height)
+rapporto diretto con le dimensioni della Viewport (la dimensione della finestra del browser)*/
+.flex-child-magenta{
+    font-size: 6.82vw; /*131px*/
+    font-weight: bold;
+    color: white;
+    padding-left: 4.271vw;
+    padding-top: 8.906vw; /*171*/
+    flex: 40%;
+
+}
+
+.flex-child-green{
+    background-image: url(images/Rectangle1.png);
+    background-size: contain;
+    width: auto;
+    height: 59.791666666666664vw ; /*1148  */
+    font-size: 1.667vw; /*32px*/
+    color: black;
+    line-height: 3.698vw; /*71px*/
+    text-align: justify;
+    padding: 10vw 9.323vw 0px 9.323vw; /*destra-sinistra 179px, top 198px*/
+    flex: 60%;
+}
+
+.connoi{
+    font-weight: lighter;
+}
+   
+.quote{
+    font-size: calc(30px + 0.625vw);
+    text-align: center;
+    font-weight: bold;
+    margin-top: calc(50px + 5.208333333333333vw);
+    margin-bottom: calc(50px + 5.208333333333333vw);
+}
+
+.virgolette{
+    font-size: calc(120px + 4.166666666666667vw);
+    color: #004225;
+    text-align: left;
+    font-weight:bold;
+    font-style: italic;
+    height: 125px;
+    margin-left: 3.28125vw;
+    overflow: hidden;
+}
+
+.virgolettend{
+    font-size: calc(120px + 4.166666666666667vw);
+    color: #004225;
+    text-align: left;
+    font-weight:bold;
+    font-style: italic;
+    transform: rotate(180deg);
+    margin-right: 7.291666666666667vw;
+    height: 130px;
+    overflow-y: hidden;
+
+}
+
+.contatti{
+    color: white;
+    background-color: #232323;
+    padding-left: 7.552083333333333vw;
+    padding-bottom: 100px;
+    line-height: 50px;
+    font-size: 24px;
+}
+
+.contattext{
+    font-size: 41px
+    
+}
+
+.servizilinea{
+    padding-top: 150px;
+}
+
+                                /*MEDIA QUERY*/
+
+/*Nav bar*/
+
+@media (max-width: 1650px) {
+    nav ul li  {
+        display: inline-block;
+        margin: 0vw 2.5vw;
+        text-align:right;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav ul li  {
+        display: inline-block;
+        margin: 0vw 1vw;
+        text-align:right;
+    }
+
+        .fondatori
+    {
+    margin-left: 50px;
+    margin-right: 50px;
+    }
+
+
+    /*Titolo*/
+    .fondatori-child3{
+        text-align: center;
+        font-size: 24px;
+        padding-top: 95px;
+        width: 100%;
+        display: inline-block;
+        font-weight: 600;
+    }
+
+    /*Propic sinistra*/
+    .fondatori-child1{
+        width: 100%;
+        display: grid;
+        padding-top: 20px;
+        justify-content: center;
+        
+    
+    }
+
+    /*Propic destra*/
+    .fondatori-child2{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        padding-top: 90px;
+        padding-left: 0px;
+        
+
+    }
+
+    .fondatori-img
+    {
+        max-width: 100% ;
+
+    }
+
+    .pictesto{
+        font-size: 20px;
+        padding-top: 10px;
+        display: grid;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 840px) {
+    
+  
+    nav {
+        display: flex;
+        align-items: center;
+        padding:  60px 0 116px 150px;
+    }
+    
+    nav ul {
+        text-align: end;
+        position: absolute;
+        right: 0.78125vw;
+        font-weight: 600;
+        display: inline-block;
+        margin-top: 80px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.3vw 4.3vw;
+        text-align:right;
+    }
+
+    nav .logo {
+        width: 300px;
+        cursor: pointer;
+        position: absolute;
+        left: 30px;
+        margin-right: auto;
+    }
+
+    nav .logo {
+        width: 240px;
+        cursor: pointer;
+        position: relative;
+        left: -120px;
+        margin-right: auto;
+    }
+    
+
+    /*LAVORA CON NOI MEDIA*/
+
+    .flex-container {
+        display: grid;
+        height: auto;
+        background-image: url("images/Foto primo piano/Foto n2.jpg");
+        background-position: top;
+        background-repeat: no-repeat; 
+        background-size: auto; 
+        height: inherit;
+    }
+
+
+    .lavoraconnoi{
+        width: 100%;
+    }
+
+
+    .flex-child-magenta{
+        font-size: 6.82vw; /*131px*/
+        font-weight: bold;
+        color: white;
+        padding-left: 0;
+        padding-top: 30px; 
+        padding-bottom: 40px;
+        flex: 50%;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .flex-child-green{
+        background-image: none;
+        background-color: #d3d3d3e5;
+        background-repeat:repeat-y;
+        width: 100%;
+        justify-self: center;
+        height: auto;  /*1148  */
+        font-size: 16px; /*32px*/
+        color: black;
+        line-height: calc(21px + 2.6041666666666665vw); /*71px*/
+        text-align: center;
+        padding: 65px calc(50px + 7.813vw) 80px calc(50px + 7.813vw); /*destra-sinistra 179px, top 198px*/
+        flex: 50%;
+       
+    }
+
+    .connoi{
+        font-weight: lighter;
+    }
+
+    .testoservizi{
+        padding-top: 70px;
+        padding-right: 15px;
+        padding-left: 15px;
+       
+        text-align: justify;
+        font-size: calc(16px + 0.8333333333333334vw);
+        line-height: calc(20px + 2.6041666666666665vw);
+        color: #ffffff;
+    }
+
+    .testochisiamo{
+        padding: 0 55px; /*146px*/
+        padding-bottom: 3.646vw; /*70px*/
+        text-align: justify;
+        text-justify: inter-word;
+        font-size: calc(16px + 0.833vw); /*32px*/
+        line-height: calc(20px + 2.6041666666666665vw); /*71px*/
+    }
+      
+    
+    .quote{
+        font-size: 26px;
+        text-align: center;
+        font-weight: bold;
+        margin-top: calc(50px + 5.208333333333333vw);
+        margin-bottom: calc(50px + 5.208333333333333vw);
+        padding: 0 20px;
+    }
+
+        /*
+        .sfondo{
+            position: relative;
+            right: 100px;
+            width: 1000px; 
+            height: 360px; 
+            object-fit: cover;
+            padding-bottom: 20px;
+            overflow: hidden;
+        } 
+        */
+   
+}
