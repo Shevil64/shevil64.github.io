@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;   
+    overflow-x: hidden; 
+}
+
+.hero {
+    background-color: #ffffff;
+    height: auto;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: relative;
+
+}
+
+/*NAV*/
+
+nav {
+    display: flex;
+    align-items: center;
+    padding:  60px 0 60px 150px;
+}
+
+nav .logo {
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+    left: -100px;
+    margin-right: auto;
+}
+
+/*applica lo stile alla lista non ordinata figlia dell'elemento nav*/
+nav ul {
+    text-align: end;
+    position: absolute;
+    right: 0.78125vw;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*applica lo stile ai singoli elementi della lista non ordinata\ box diverso*/
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0vw calc(120px - 2vw);
+    
+    /* il margine sopra e sotto \ destra e sinistra */
+
+}
+
+/*cambia lo stile dei link eredi di etc etc */
+nav ul li a {
+    text-decoration: none; /*per evitare che compaia la sottolineatura tipica del collegamento*/
+    color: #929292;
+    font-size: calc(9px + 0.390625vw);
+}
+
+/*cambia colore ai link quando ci passi sopra*/
+a:hover{
+    color: #000000b7;
+ 
+ }
+
+
+.copertina{
+
+    justify-content: center;
+    display: grid;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    
+}
+
+.copertina img{
+    position: relative;
+    width: 100%;
+}
+
+
+.descrizione{
+    font-size: calc(16px + 1.0416666666666667vw);
+    font-weight: bold;
+    padding-top: 124px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+                    /*GALLERIA*/
+
+
+#galleria{
+	text-align: center;
+	width: 100%;
+}
+
+
+.immagine{
+	display: inline-block;
+	width: 24%;
+	margin: 20px 0.78125vw;
+    padding: 1.5625vw 5px;
+    vertical-align: top; /*per allineare verticalmente i blocchi nella parte superiore*/
+}
+
+.immagine p{
+    font-size: 20px;
+}
+
+.galleria-endl{
+    padding-bottom: calc(50px + 13.5vw)
+}
+
+.preview{
+	width: 100%;
+}
+
+@media (max-width: 480px) {
+	.immagine{
+		width: 98%;
+		margin: 1%;
+        padding: 20px;       
+	}
+}
+
+@media (max-width: 720px) and (min-width: 480px){
+	.immagine{
+		width: 47%;
+	}
+}
+
+@media (max-width: 1280px) and (min-width: 720px){
+	.immagine{
+		width: 30%;
+        padding: 10px;
+	}
+}
+
+
+
+
+
+                                /*MEDIA QUERY*/
+
+/*Nav bar*/
+
+@media (max-width: 1650px) {
+    nav ul li  {
+        display: inline-block;
+        margin: 0vw 2.5vw;
+        text-align:right;
+    }
+
+    @media (max-width: 1024px) {
+        nav ul li  {
+            display: inline-block;
+            margin: 0vw 1vw;
+            text-align:right;
+        }    
+    }
+    
+    @media (max-width: 840px) {
+        
+      
+        nav {
+            display: flex;
+            align-items: center;
+            padding:  60px 0 116px 150px;
+        }
+        
+        nav ul {
+            text-align: end;
+            position: absolute;
+            right: 0.78125vw;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 80px;
+        }
+    
+        nav ul li {
+            display: block;
+            margin: 0.3vw 4.3vw;
+            text-align:right;
+        }
+    
+        nav .logo {
+            width: 300px;
+            cursor: pointer;
+            position: absolute;
+            left: 30px;
+            margin-right: auto;
+        }
+    
+        nav .logo {
+            width: 240px;
+            cursor: pointer;
+            position: relative;
+            left: -120px;
+            margin-right: auto;
+        }
+    }
+}
